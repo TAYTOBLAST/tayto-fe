@@ -1,0 +1,296 @@
+.background {
+    position: relative;
+    width: 100%;
+    background-color: #FFF6E8;
+    overflow: hidden;
+}
+
+.content {
+
+    width: calc(100% - 10rem);
+    min-width: calc(700px);
+    max-width: calc(100% - 10rem);
+    margin: 0 auto;
+    padding: 0;
+    overflow-y: hidden;
+
+    z-index: 3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infoCard {
+    width: 100%;
+    opacity: 1;
+    border-radius: 1rem;
+    margin-bottom: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.logoBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.84063rem;
+    border: 1.121px solid #E7AF4E;
+    background: #E7AF4E;
+    padding: 0.3rem;
+    margin-right: 2rem;
+    flex-shrink: 0;
+}
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.infoNameBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.overviewListCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    grid-gap: 0 1rem;
+
+}
+.overviewItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFEDCD;
+    border-radius: 1.5rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+
+    /*
+    margin-right: 1rem;
+*/
+    width: 10rem;
+}
+
+.paginCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.goodsListCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.goodsItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-radius: 2.17806rem;
+    border: 2.178px solid #E7AF4E;
+    background: rgba(255, 255, 255, 0.14);
+    padding: 1.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 2.6rem;
+    width: calc(33.33% - 1.666rem);
+ 
+    white-space: wrap;
+    overflow: hidden;
+}
+.goodsItem:nth-child(2n) {
+    margin-right: 2.5rem;
+}
+.goodsItem:nth-child(3n) {
+    margin-right: 0;
+}
+
+.goodsInfoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.63356rem;
+    background: #E1D0BD;
+    width: 100%;
+    padding: 1rem;
+
+}
+.goodsCurPriceBox {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 0.6875rem;
+    background: #FFEDCD;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.8rem;
+
+}
+.goodsCurPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+.selectItem {
+    margin-right: 2rem;
+    position: relative;
+    padding: 2rem 0;
+}
+.selectPagin {
+    position: absolute;
+    border-radius: 1.3125rem;
+    background: #E7AF4E;
+    width: 100%;
+    height: 0.425rem;
+    bottom: 1rem;
+}
+
+.btn {
+    color: #E7AF4E;
+    padding: 1rem;
+    text-transform: none;
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 1rem;
+    line-height: 1rem;
+    height: 3.4rem;
+    width: 100%;
+
+
+    border-radius: 6.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+
+    background:#7A5651;
+}
+.btn:hover {
+    color: #E7AF4E;
+    background:#370903;
+}
+.btn2 {
+    color: #E7AF4E;
+    padding: 1rem;
+    text-transform: none;
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 1rem;
+    line-height: 1rem;
+    height: 3.4rem;
+    width: 100%;
+
+
+    border-radius: 6.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+
+    background: #370903;
+}
+.btn2:hover {
+    color: #E7AF4E;
+    background:#7A5651;
+}
+.middleOmit {
+
+    font-family:'AlibabaPuHuiTiRegular';
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #370903;
+    padding: 1.2rem 0.125rem;
+    text-decoration: underline;
+}
+
+
+.overflowXFix {
+    overflow-x: auto;
+    width: 100%;
+
+}
+.tableBox {
+    width: 100%;
+}
+.hide {
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+
+.tableBox th:nth-child(2) {
+    border-top-left-radius: var(--rounded-box, 1rem);
+
+}
+.tableBox tr:last-child td:nth-child(2) {
+    border-bottom-left-radius: var(--rounded-box, 1rem);
+}
+.tableBox th {
+    background-color: #FFF6E8;
+    border-bottom: 0.04rem solid #000;
+    text-transform: none;
+
+    background-color: #FFF6E8;
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: none;
+    color: #370903;
+    overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+}
+.tableBox th:nth-child(2) {
+    padding-left: 0;
+}
+.tableBox th:last-child {
+    padding-right: 0;
+    text-align: right;
+}
+.tableItemTd {
+    background-color: #FFF6E8;
+    border-bottom: 0.04rem solid #7A5651;
+
+    text-transform: none;
+    padding: 1rem 0;
+}
+.tableBox td {
+    cursor: pointer;
+}
+.tableBox td:nth-child(2) {
+    padding-left: 0;
+}
+.tableBox td:last-child {
+    padding-right: 0;
+    text-align: right;
+}
+.tableBox tr:last-child td {
+    border-bottom: 0;
+}
+
+
+@media screen and (max-width: 961px) {
+    .goodsItem {
+        width: calc(50% - 1.25rem);
+    }
+    .goodsItem:nth-child(2n) {
+        margin-right: 0;
+    }
+    .goodsItem:nth-child(3n) {
+        margin-right: 2.5rem;
+    }
+}

@@ -1,0 +1,247 @@
+
+.background {
+    background: url('../../assets/images/FirstInscriptionBg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100vw 218.75vw;
+    width: 100%;
+    height: 218.75vw;
+    position: relative;
+}
+.topBox {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(167.89deg, #D9D9D9 21.24%, rgba(217, 217, 217, 0) 159.45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.pageTitle {
+    position: absolute;
+    width: 88vw;
+    left: 6vw;
+    top: 6.8vw;
+
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4.28vw;
+    line-height: 5.6vw;
+    background: inherit;
+}
+.pageInfo {
+    position: absolute;
+    left: 6vw;
+    width: 58vw;
+    top: 23.6vw;
+
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8vw;
+    line-height: 2.6vw;
+
+    color: #AB5E23;
+
+    mix-blend-mode: normal;
+    opacity: 0.73;
+    background: inherit;
+
+}
+.subInfo {
+    position: absolute;
+    left: 6vw;
+    width: 58vw;
+    top: 37vw;
+
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    background: inherit;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.subInfoTime {
+    position: absolute;
+    left: 62.2vw;
+    width: 58vw;
+    top: 40.4vw;
+
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8vw;
+    line-height: 1.4vw;
+    background: inherit;
+    mix-blend-mode: normal;
+    transform: rotate(0.25turn);
+    background: linear-gradient(90deg, rgb(82,61,44), rgb(87,59,37));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.subInfoSubInfo {
+    position: absolute;
+    left: 62.1vw;
+    width: 58vw;
+    top: 53vw;
+
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.22vw;
+    line-height: 1.4vw;
+    background: inherit;
+    mix-blend-mode: normal;
+    transform: rotate(0.25turn);
+    background: linear-gradient(90deg, rgb(58,28,5), rgb(58,28,5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btnList {
+    position: absolute;
+    left: 6vw;
+    top: 40vw;
+}
+.btn {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8vw;
+    line-height: 1.8vw;
+    background: rgba(207, 153, 112, 1);
+    -webkit-background-clip: text;/*将设置的背景颜色限制在文字中*/
+    -webkit-text-fill-color: transparent;/*给文字设置成透明*/
+}
+.btnList {
+    background: inherit;
+}
+.btnContent {
+    width: 100%;
+    height: 6vw;
+    background-color: black;
+    border-radius: 1.6vw;
+    padding: 1vw 1.2vw;
+}
+
+.topPlate1 {
+    position: absolute;
+    top: 83.7vw;
+    left: 0;
+    width: 100%;
+}
+.topPlate1 .text1 {
+    position: absolute;
+    left: 34vw;
+    top: 0;
+    width: 48vw;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    color: #070300;
+}
+.topPlate1 .text2 {
+    position: absolute;
+    left: 23vw;
+    top: 10vw;
+    width: 63vw;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    color: #070300;
+}
+.topPlate2 {
+    position: absolute;
+    top: 138.7vw;
+    left: 0;
+    width: 100%;
+}
+.topPlate2 .text1 {
+    position: absolute;
+    left: 16vw;
+    top: 0;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.6vw;
+    line-height: 2.6vw;
+    color: #753300;
+}
+.topPlate2 .text2 {
+    position: absolute;
+    left: 16vw;
+    top: 6vw;
+    width: 64vw;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vw;
+    line-height: 2.6vw;
+    color: #44413F;
+}
+.topPlate2 .text3 {
+    position: absolute;
+    left: 16vw;
+    top: 15vw;
+    width: 66vw;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vw;
+    line-height: 2.6vw;
+    color: #44413F;
+}
+.topPlate3 {
+    position: absolute;
+    top: 169.7vw;
+    left: 0;
+    width: 100%;
+}
+.topPlate3 .text1 {
+    position: absolute;
+    left: 30vw;
+    top: 0;
+    width: 42vw;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.6vw;
+    line-height: 3vw;
+    text-align: center;
+    color: #070300;
+}
+.topPlate3 .text2 {
+    position: absolute;
+    left: 30vw;
+    top: 8vw;
+    width: 43vw;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6vw;
+    line-height: 2vw;
+    text-align: center;
+    color: #070300;
+
+}
+.topPlate3 .text3 {
+    position: absolute;
+    left: 30vw;
+    top: 19vw;
+    width: 43vw;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6vw;
+    line-height: 2vw;
+    text-align: center;
+    color: #070300;
+
+}
+@media screen and (max-width: 961px) {
+}

@@ -1,0 +1,59 @@
+
+.pageNavView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    user-select: none;
+}
+.pageNavBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pageNavItem {
+    font-family:'AlibabaPuHuiTiRegular';
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #000000;
+    border: 0.05rem solid transparent;
+    padding: 0.6rem 0.9rem;
+    margin: 0 0.256rem;
+    cursor: pointer;
+}
+.pageNavItem:hover {
+    color: #C68E2C;
+    border: 0.05rem solid #C68E2C;
+    border-radius: 0.5rem;
+}
+.pageNavItemCur {
+    border: 0.05rem solid #000;
+    border-radius: 0.5rem;
+}
+.pageNavArrowImgBox {
+
+}
+.pageNavArrowImg {
+
+    border: 0.05rem solid transparent;
+    fill: #7A5651;
+    padding: 0.52rem 0.52rem;
+    margin: 0 0.256rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.pageNavArrowImg:hover {
+    border-radius: 0.5rem;
+    border: 0.05rem solid #C68E2C;
+    fill: #C68E2C;
+
+}
+.pageNavArrowImg svg {
+    height: 100%;
+    height: 100%;
+
+}

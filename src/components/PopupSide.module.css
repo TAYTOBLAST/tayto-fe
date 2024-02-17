@@ -1,0 +1,129 @@
+@-webkit-keyframes inmove {
+    100% {-webkit-transform: translate(0, 0);}
+}
+
+@keyframes inmove {
+    100% {transform: translate(0, 0);}
+}
+.setInMove {
+    -webkit-animation: inmove 0.5s linear forwards;
+    animation: inmove 0.5s linear forwards;
+    -webkit-transform: translate(120%, 0);
+    transform: translate(120%, 0);
+}
+
+@-webkit-keyframes remove {
+    0% {transform: translate(0, 0);}
+    100% {-webkit-transform: translate(120%, 0);}
+}
+
+@keyframes remove {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(120%, 0);}
+}
+.setReMove {
+    -webkit-animation: remove 0.5s linear backwards 1;
+    animation: remove 0.5s linear backwards 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.popupBox {
+    position: fixed;
+    right: 2rem;
+    top: 6rem;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    width: 15.3125rem;
+    box-shadow: 0 0.25rem 0.25rem #a1a1a145;
+    transform: translate(120%, 0);
+}
+.popupTitleBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.popupTitle {
+    font-family:'AlibabaPuHuiTiRegular';
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #000000;
+    margin-left: 0.4375rem;
+}
+
+.uploadProgressBox {
+    position: absolute;
+    height: 0.1875rem;
+    width: 100%;
+    border-radius: 0.1875rem;
+    bottom: -0.375rem;
+    border-radius:1rem;
+    color: #4FE48B;
+
+}
+.uploadProgressBox::-webkit-progress-bar {
+    background-color:#b4dfc5;
+
+    border-radius:1rem;
+}
+.uploadProgressBox::-webkit-progress-value {
+    background-color:#4FE48B;
+
+    border-radius:1rem;
+}
+
+.progressGColor {
+    color: #4FE48B;
+}
+.progressGColor::-webkit-progress-bar {
+    background-color:#b4dfc5;
+}
+.progressGColor::-webkit-progress-value {
+    background-color:#4FE48B;
+}
+
+.progressYColor {
+    color: #C68E2C;
+
+}
+.progressYColor::-webkit-progress-bar {
+    background-color:#E1D0BD;
+}
+.progressYColor::-webkit-progress-value {
+    background-color:#C68E2C;
+}
+
+
+.popupInfoBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.875rem;
+}
+.popupInfoTime {
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 0.625rem;
+    line-height: 0.625rem;
+    color: #5B5650;
+}
+.popupInfoJumpTitle {
+    margin-right: 0.25rem;
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 0.625rem;
+    line-height: 0.625rem;
+    color: #7A5651;
+
+}
+.popupInfoJump {
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    user-select: none;
+}

@@ -1,0 +1,866 @@
+@font-face {
+    font-family: FredokaOne;
+    src: url('/font/FredokaOne-Regular.ttf');
+}
+@font-face {
+    font-family: AlibabaPuHuiTiMedium;
+    src: url('../public/font/AlibabaPuHuiTi-3-65-Medium.ttf');
+}
+@font-face {
+    font-family: AlibabaPuHuiTiMedium;
+    src: url('/font/AlibabaPuHuiTi-3-65-Medium.ttf');
+}
+@font-face {
+    font-family: Modak;
+    src: url('/font/FredokaOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../../public/font/Unbounded-VariableFont_wght.ttf');
+}
+
+.container {
+  padding: 0;
+  overflow-y: hidden;
+}
+.imgLogoBox {
+    margin-right: 0.75rem;
+}
+.imgLogo {
+    cursor: pointer;
+    height: 2.6rem;
+    max-width: none;
+}
+.navbar {
+    border-bottom: 0.25rem solid #370903;
+    background: rgba(255, 255, 255, 1);
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    user-select: none;
+    z-index: 3;
+    position: relative;
+    background: rgb(4,4,4);
+
+}
+.navbarBut {
+    cursor: pointer;
+    background-color: #E7AF4E;
+    color: #370903;
+    border: 0;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 2.7rem;
+    padding: 0 0.8rem;
+}
+.navbarBut:hover{
+    background-color: #ca9944;
+}
+
+.navbarTextBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.navbarText {
+    position: relative;
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+    color: #753300;
+    overflow: visible;
+
+}
+
+.pointBox {
+    display: none;
+    position: absolute;
+    left: -50%;
+    bottom: -3rem;
+    color: #FFEDCD;
+    border-radius: 2.0625rem;
+    background: #B11212;
+    padding: 0.375rem 0.625rem;
+}
+.navbarText:hover .pointBox {
+    display: block;
+}
+
+.navbarCurCorlor {
+    color: #C68E2C;
+}
+.triangle {
+    position: absolute;
+    top: -0.8rem;
+    left: 2rem;
+    display:block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0 18rpx;
+    line-height: 0;
+    font-size: 0;
+    vertical-align: middle;
+    border-right: 12px solid #B11212;
+    border-left: 0 none;
+    border-top: 5px solid transparent;
+    border-bottom: 10px solid transparent;
+    _color: #FF3FFF;
+    _filter: chroma(color=#FF3FFF);
+    transform:rotate(90deg);
+}
+
+.navbarButBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.navbarDocsBut {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-transform: none;
+    border-radius: 0.4rem;
+    background-color: #FFF;
+    height: 2.7rem;
+    padding: 0 0.7rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    /*border: 0.125rem solid #333;*/
+    border: 0;
+    fill: #333;
+
+}
+.navbarDocsBut:hover {
+    color: #C68E2C;
+    fill: #C68E2C;
+
+}
+.navbarDocsIconBox {
+    width: 1.8rem;
+    height: 1.8rem;
+    overflow: hidden;
+
+    position: relative;
+    flex-shrink: 0;
+}
+.navbarDocsIcon {
+    width: 100%;
+    height: 100%;
+}
+.navbarDocsText {
+    margin-left: 0.7rem;
+}
+
+.main {
+  min-height: 70vh;
+  padding: 1rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
+
+
+.background {
+    position: relative;
+    width: 100%;
+    background-color: #FFF6E8;
+    overflow: hidden;
+}
+.homeTitleBox {
+    position: relative;
+    width: 100vw;
+    height: 20vw;
+    margin: 16vw 0 16vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homeTitleBoxTitle {
+    font-family:'FredokaOne';
+    font-size: 4.7vw;
+    line-height: 4.7vw;
+    color: #370903;
+    text-align: center;
+    white-space: break-spaces;
+    margin-bottom: 0.3vw;
+}
+.homeTitleBoxInfo {
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 2.5vw;
+    line-height: 4vw;
+    text-align: center;
+    white-space: wrap;
+    width: 70vw;
+    padding: 1vw;
+    color: #7A5651;
+}
+
+.homeTitleYColor {
+    color: #E7AF4E;
+    display: inline;
+}
+
+.backgroundItemA {
+    position: absolute;
+    overflow: visible;
+    background: no-repeat center/100% url('/images/home_title_potato_A.png');
+    background-repeat: no-repeat;
+    background-position: -4% 45%;
+    background-size: 12.36850vw 16.22397vw;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.backgroundItemB {
+    position: absolute;
+    overflow: visible;
+    background: no-repeat center/100% url('/images/home_title_potato_B.png');
+    background-repeat: no-repeat;
+    background-position: 103% 44%;
+    background-size: 14.90162vw 15.56772vw;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+.backgroundItemC {
+    position: absolute;
+    overflow: visible;
+    background: no-repeat center/100% url('/images/background-atmosphere-a.png');
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: 53rem 28.66rem;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(80%);
+    opacity: 0.6;
+    z-index: 1;
+
+}
+.backgroundItemD {
+    position: absolute;
+    overflow: visible;
+    background: no-repeat center/100% url('/images/background-atmosphere-b.png');
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-size: 16rem 16rem;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(80%);
+    opacity: 0.6;
+    z-index: 1;
+
+}
+
+.plateBox {
+    opacity: 1;
+    padding: 2.9rem;
+    border-radius: 1rem;
+    margin-bottom: 3.2rem;
+
+    width: calc(100% - 20rem);
+    min-width: calc(700px);
+    max-width: calc(100% - 20rem);
+    margin: 0 auto;
+    padding: 0 4.2rem 0 4.2rem;
+    overflow-y: hidden;
+}
+.whyBox {
+    border-radius: 2.375rem;
+    background: #FFEDCD;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+.whyText {
+    color: #370903;
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 1.2rem;
+    width: 100%;
+}
+.whyText:last-child {
+    padding-bottom: 0;
+}
+.nameColor {
+    color: #C68E2C;
+}
+
+.tokenBox {
+    border-radius: 3.3125rem;
+    border: 10px solid #E7AF4E;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+
+}
+.tokenInfoBox {
+    border-radius: 1.875rem;
+    background: #FFEDCD;
+    padding: 0.5rem 1rem;
+}
+
+.tokenTitle {
+    color: #000;
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.tokenVal {
+    color: #000;
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1rem;
+
+}
+.tokenInfo {
+    color: #C68E2C;
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.tokenInfoTitle {
+    color: #7A5651;
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.tokenInfoItemTitle {
+    font-size: 1.2rem;
+}
+
+.roadmapBox {
+    border-radius: 2.375rem;
+    background: rgba(255, 255, 255, 0.50);
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 3rem;
+
+}
+
+.roadmapItemA {
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+    scrollbar-track-color: transparent;
+    -ms-scrollbar-track-color: transparent;
+
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+    margin: 0;
+
+    background: rgba(255, 255, 255, 0.50);
+
+    padding: 1rem 0 1rem 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.roadmapItemA::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+.phaseItem {
+    flex-shrink: 0;
+    color: #370903;
+    cursor: pointer;
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0.325rem 1rem;
+    border-radius: 1.125rem;
+    border: 6px solid transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.phaseItemActive {
+    border: 6px solid #E7AF4E;
+    background: #FFEDCD;
+}
+.plateSliderBox {
+    background: rgba(255, 255, 255, 0.50);
+    padding: 2.8rem 0 2.5rem 0;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+.plateSlider {
+
+}
+.roadmapItemB {
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: hidden;
+    scrollbar-color: transparent transparent;
+    scrollbar-track-color: transparent;
+    -ms-scrollbar-track-color: transparent;
+
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.50);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.roadmapItemB::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+.roadmapItemBItem {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.roadmapItemNum {
+    width: 4rem;
+    height: 4rem;
+    border: 8.8px solid #E7AF4E;
+    border-radius: 2rem;
+    background-color: #FFEDCD;
+    color: #370903;
+    font-family: Modak;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.roadmapItemTitle {
+    color: var(--, #000);
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.roadmapItemInfo {
+    color: #C68E2C;
+    text-align: center;
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.plateTitle {
+    font-family:'FredokaOne';
+    font-size: 4rem;
+    color: #370903;
+    text-shadow: 0px 0.1rem 0.1rem #846966;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+@media screen and (max-width: 961px) {
+    .plateTitle {
+        flex-direction: column;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+}
+.plateInfoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.plateInfoItemBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+@media screen and (max-width: 961px) {
+    .plateInfoItemBox {
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+}
+.plateInfoItemInfoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.plateInfoItemTitle {
+    font-family:'FredokaOne';
+    font-size: 2rem;
+    line-height:2rem;
+    color: #370903;
+    margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 961px) {
+    .plateInfoItemTitle {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+}
+.plateInfoItemInfo {
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #C68E2C;
+    margin-bottom: 1rem;
+}
+.plateInfoItemInfo:last-child {
+    margin-bottom: 0;
+
+}
+@media screen and (max-width: 961px) {
+    .plateInfoItemInfo {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+.platePotatoBox {
+    flex-shrink: 0;
+    margin-right: 3vw;
+    width: 14vw;
+    height: 14vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.platePotatoFrame {
+    background-color: #ffedcd;
+    border-radius: 2vw;
+}
+@media screen and (max-width: 961px) {
+    .platePotatoBox {
+        font-size: 1rem;
+        width: 100%;
+        margin-bottom: 0.8rem;
+    }
+}
+.platePotatoImgA {
+    overflow: visible;
+    background: no-repeat center/100% url('/images/home_plate_potato_A.png');
+    background-repeat: no-repeat;
+    background-size: 14vw 14vw;
+    width: 14vw;
+    height: 14vw;
+    z-index: 1;
+}
+.platePotatoImgB {
+    overflow: visible;
+    background: no-repeat center/100% url('/images/home_plate_potato_B.png');
+    background-repeat: no-repeat;
+    background-size: 14vw 14vw;
+    width: 14vw;
+    height: 14vw;
+    z-index: 1;
+}
+.platePotatoImgC {
+    overflow: visible;
+    background: no-repeat center/100% url('/images/home_plate_potato_C.png');
+    background-repeat: no-repeat;
+    background-size: 14vw 14vw;
+    width: 14vw;
+    height: 14vw;
+    z-index: 1;
+}
+.platePotatoImgD {
+    overflow: visible;
+    background: no-repeat center/100% url('/images/home_plate_potato_D.png');
+    background-repeat: no-repeat;
+    background-size: 14vw 14vw;
+    width: 14vw;
+    height: 14vw;
+    z-index: 1;
+}
+.backgroundItemE {
+    position: absolute;
+    overflow: visible;
+    background: no-repeat center/100% url('/src/assets/images/background-atmosphere-c.png');
+    background-repeat: no-repeat;
+    background-position: 0% 50rem;
+    background-size: 82.6rem 140rem;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    mix-blend-mode: color-burn;
+}
+.footerBox {
+    background-color: #FFF6E8;
+    position: relative;
+    user-select: none;
+}
+.footerReadmeBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.footerReadmeLogoBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerReadmeLogo {
+    overflow: visible;
+    background: no-repeat center/100% url('/images/logo2.png');
+    background-repeat: no-repeat;
+    background-size: 4.11250rem 5.18167rem;
+    width: 4.11250rem;
+    height: 5.18167rem;
+    z-index: 1;
+}
+
+.footerReadmeTitle {
+    color:#370903;
+    font-family:'FredokaOne';
+    font-size: 6.05714rem;
+    line-height: 6.05714rem;
+    margin: 2.56rem;
+}
+
+.footerReadmeInfo {
+    color:#C68E2C;
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    margin-bottom: 2.56rem;
+}
+.footerReadmeLogoFrem {
+    width: 4.9875rem;
+    height: 4.9875rem;
+    flex-shrink: 0;
+    border-radius: 4.9875rem;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footerReadmeLogoFrem:hover {
+    background-color: #C68E2C;
+}
+.footerReadmeFillCurrent {
+    fill: #370903;
+}
+.footerWebLabel {
+    display: block;
+    text-align: center;
+    white-space: break-spaces;
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 0.735rem;
+    line-height: 0.735rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 1.09375rem 0.43750rem;
+    width: 100%;
+    bottom: 0;
+}
+.footerWebLabelName {
+    font-weight: 800;
+    display: inline;
+}

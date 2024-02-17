@@ -1,0 +1,304 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+  background: black;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar-end {
+  width: auto !important;
+  justify-content: flex-end;
+}
+
+.col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mrl2 {
+    margin: 0 2rem;
+}
+.input {
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: var(---2, rgba(255, 255, 255, 0.70));
+    width: 100%;
+    padding: 1rem 1.5rem 0.625rem 1.5rem;
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 1.25rem;
+    border: 0.125rem solid #ffffff00;
+}
+
+.ant-slider .ant-slider-handle::after,
+.ant-slider .ant-slider-handle:hover::after,
+.ant-slider .ant-slider-handle:active::after,
+.ant-slider .ant-slider-handle:focus::after {
+    background-color: #FFEDCD;
+    box-shadow: 0 0 0 2px #E7AF4E;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input {
+    color: #1D1D1D;
+}
+textarea {
+    color: #1D1D1D;
+}
+.w-full {
+    width: 100%;
+}
+.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    background-color: #59403c;
+    color: #FFEDCD;
+    border-color: #59403c;
+}
+.btn {
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: none;
+    color: #370903;
+    background-color: #FFEDCD;
+    margin-right: 1rem;
+    height: 3.15rem;
+    border: 2px solid #7A5651;
+    border-radius: 0.75rem;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #E1D0BD;
+}
+
+.firstInscriptionBtn.ant-btn {
+    position: relative;
+    border: none;
+    border-radius: 1.6vw;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(90deg, rgb(68,64,61), rgb(78,62,49));
+    padding: 1.8px;
+    margin-right: 1.8vw;
+    height: auto;
+}
+
+.ant-modal .ant-modal-content {
+    border-radius: 1.12rem;
+    background: #FFEDCD;
+    padding: 2.8rem;
+}
+.ant-modal .ant-modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #FFEDCD;
+
+}
+.ant-modal .ant-modal-title {
+    color: #370903;
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.ant-modal .ant-modal-close-x .anticon svg {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.ant-modal .ant-modal-footer {
+    display: none;
+}
+
+.ant-statistic-content {
+    white-space: nowrap;
+}
+.ant-statistic .ant-statistic-title {
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #5B5650;
+
+}
+.ant-statistic .ant-statistic-content .ant-statistic-content-value,
+.ant-statistic-content-value-int,
+.ant-statistic-content-value-decimal {
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 1.26rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #370903;
+
+}
+
+.ant-image .ant-image-img {
+    vertical-align: sub;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+table thead {
+    border-bottom:2px solid #000080;
+}
+table thead th {
+    text-align: end;
+    padding: 1.2rem 0.125rem;
+
+}
+table thead th:first-child {
+    text-align: start;
+    padding-left: 2rem;
+}
+table thead th:last-child {
+    padding-right: 2rem;
+}
+
+table tbody td {
+    padding: 0 0.125rem 0.2rem 0.125rem;
+    text-align: end;
+}
+table tbody td:first-child {
+    text-align: start;
+    padding-left: 2rem;
+}
+table tbody td:last-child {
+    padding-right: 2rem;
+}
+.tableItemStart {
+    text-align: start;
+}
+.tableItemCenter {
+    text-align: center;
+}
+.tableItemEnd {
+    text-align: end;
+}
+
+.nothingBox {
+    width: 100%;
+    padding: 3rem 10rem 10rem 10rem;
+}
+
+.tableBox {
+    width: 100%;
+}
+
+.middleOmit {
+
+    font-family:'AlibabaPuHuiTiRegular';
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #370903;
+    padding: 1.2rem 0.125rem;
+    text-decoration: underline;
+}
+
+.text2p56 {
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 2.56rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.text2 {
+    text-align: center;
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text1p75 {
+    text-align: center;
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text1p26 {
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 1.26rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text1 {
+    font-family: AlibabaPuHuiTiMedium;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ptb1 {
+    padding: 1rem 0;
+}
+.mainColor {
+    color: #370903;
+
+}
+.infoColor {
+    color: #5B5650;
+
+}
+
+.mainBrownColor {
+    color: #7A5651;
+}
+.infoBrownColor {
+    color: #A79592;
+}
+.pointBrownColor {
+    color: #C68E2C;
+}
+.successColor {
+    color: #0FAA02;
+}
+.errorColor {
+    color: #F95A69;
+}

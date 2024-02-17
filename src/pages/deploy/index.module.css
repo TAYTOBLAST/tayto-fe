@@ -1,0 +1,472 @@
+.background {
+    position: relative;
+    width: 100%;
+    background-color: #FFF6E8;
+}
+
+.content {
+
+    width: calc(100% - 20rem);
+    min-width: calc(700px);
+    max-width: calc(100% - 20rem);
+    margin: 0 auto;
+    padding: 4.2rem 0;
+    overflow-y: hidden;
+
+    z-index: 3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    width: 100%;
+    background: #FFEDCD;
+    opacity: 1;
+    padding: 2.9rem;
+    border-radius: 1rem;
+    margin-bottom: 3.2rem;
+}
+.cardSub {
+    width: 100%;
+    background: #ffffff7F;
+    opacity: 1;
+    border-radius: 1rem;
+    border: 0.125rem solid #9B9A99;
+    margin-top: 2.125rem;
+    overflow: hidden;
+
+}
+@font-face {
+    font-family: FredokaOne;
+    src: url('../../public/font/FredokaOne-Regular.ttf');
+}
+.cardTitle {
+    font-family:'FredokaOne';
+    font-size: 2.6rem;
+    color: #370903;
+    text-shadow: 0px 0.1rem 0.1rem #846966;
+    width: 100%;
+    text-align: center;
+}
+@font-face {
+    font-family: AlibabaPuHuiTiBold;
+    src: url('../../public/font/AlibabaPuHuiTi-3-85-Bold.ttf');
+}
+@font-face {
+    font-family: AlibabaPuHuiTiMedium;
+    src: url('../../public/font/AlibabaPuHuiTi-3-65-Medium.ttf');
+}
+@font-face {
+    font-family: AlibabaPuHuiTiRegular;
+    src: url('../../public/font/AlibabaPuHuiTi-3-55-Regular.ttf');
+}
+.itemTitleBox {
+    padding: 0;
+}
+.itemTitle {
+    font-family:'AlibabaPuHuiTiBold';
+    font-size: 1rem;
+    color: #E7AF4E;
+    width: 100%;
+    padding: 0.2rem 0;
+
+}
+
+.itemInputBox {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.itemInput {
+
+}
+.itemInput :focus {
+    outline: 0;
+
+}
+.itemInput[type=text]:focus {
+    outline: 0;
+    border: 0.125rem solid #5F8CFF;
+}
+.itemInput:focus-visible {
+    outline: 0;
+    border: 0.125rem solid #5F8CFF;
+}
+.iremInputError {
+    background-color: #FFCECE;
+    border: 0.125rem solid #FFCECE;
+
+}
+
+
+.inputValidutyIcon {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputValidutyText {
+    color: #FF4F4F;
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 1.25rem;
+    padding-top: 1.0625rem;
+}
+
+.itemTextarea {
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 1.25rem;
+    height: calc(1.4rem * 3 + 3.4rem);
+}
+
+.itemTextarea[type=text]:focus {
+    outline: 0;
+    border: 0.125rem solid #5F8CFF;
+}
+.itemTextarea:focus-visible {
+    outline: 0;
+    border: 0.125rem solid #5F8CFF;
+}
+
+.itemFilesBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: 0.125rem solid #C68E2C;
+    border-radius: 0.5rem;
+    padding: 1rem 1.6rem;
+    width: 100%;
+    position: relative;
+
+}
+.itemFilesText {
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 1.25rem;
+    color: #C68E2C;
+
+}
+.itemFilesImg {
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.itemInput {
+
+}
+
+
+@-webkit-keyframes inmove {
+    100% {-webkit-transform: translate(0, 0);}
+}
+
+@keyframes inmove {
+    100% {transform: translate(0, 0);}
+}
+.setInMove {
+    -webkit-animation: inmove 1s linear forwards;
+    animation: inmove 1s linear forwards;
+    -webkit-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+}
+.popupBox {
+    position: fixed;
+    right: 2rem;
+    top: 6rem;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    width: 15.3125rem;
+    box-shadow: 0 0.25rem 0.25rem #a1a1a145;
+
+}
+.popupTitleBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.popupTitle {
+    font-family:'AlibabaPuHuiTiRegular';
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #000000;
+    margin-left: 0.4375rem;
+}
+
+.uploadProgressBox {
+    position: absolute;
+    height: 0.1875rem;
+    width: 100%;
+    border-radius: 0.1875rem;
+    bottom: -0.375rem;
+    border-radius:1rem;
+    color: #4FE48B;
+
+}
+.uploadProgressBox::-webkit-progress-bar {
+    background-color:#b4dfc5;
+
+    border-radius:1rem;
+}
+.uploadProgressBox::-webkit-progress-value {
+    background-color:#4FE48B;
+
+    border-radius:1rem;
+}
+
+.progressGColor {
+    color: #4FE48B;
+}
+.progressGColor::-webkit-progress-bar {
+    background-color:#b4dfc5;
+}
+.progressGColor::-webkit-progress-value {
+    background-color:#4FE48B;
+}
+
+.progressYColor {
+    color: #C68E2C;
+
+}
+.progressYColor::-webkit-progress-bar {
+    background-color:#E1D0BD;
+}
+.progressYColor::-webkit-progress-value {
+    background-color:#C68E2C;
+}
+
+
+.popupInfoBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.875rem;
+}
+.popupInfoTime {
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 0.625rem;
+    line-height: 0.625rem;
+    color: #5B5650;
+}
+.popupInfoJumpTitle {
+    margin-right: 0.25rem;
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 0.625rem;
+    line-height: 0.625rem;
+    color: #7A5651;
+
+}
+.popupInfoJump {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.btn {
+    background-color: #370903;
+    border-radius: 20rem;
+    color: #E7AF4E;
+    padding: 1rem;
+    border: 0;
+    text-transform: none;
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 1rem;
+    line-height: 1rem;
+    height: 3.4rem;
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 3.75rem;
+}
+.btn:hover {
+    background-color: #C68E2C;
+    color: #370903;
+}
+
+.tableList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+}
+.tableItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 1.2rem;
+}
+.tableItemUnit {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    /*background-color: #5F8CFF;*/
+
+    font-family:'AlibabaPuHuiTiRegular';
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #7A5651;
+    /*padding: 1.8125rem 1.8125rem;*/
+}
+.unitWidth2 {
+    width: 18%;
+}
+.unitReverse {
+    text-align: right;
+}
+.tableHeader {
+    border-bottom: 0.125rem solid #000000;
+}
+.tableHeaderItem {
+    font-family:'AlibabaPuHuiTiBold';
+    font-size: 1.4rem;
+    line-height: 1rem;
+    color: #370903;
+    /*padding: 1.8125rem 1.8125rem;*/
+    padding: 1.2rem 0.125rem;
+
+}
+
+.colorG {
+    color: #0FAA02;
+}
+
+.colorR {
+    color: #F95A69;
+}
+
+.middleOmit {
+
+    font-family:'AlibabaPuHuiTiRegular';
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #7A5651;
+    padding: 1.2rem 0.125rem;
+    text-decoration: underline;
+}
+/*
+.middleOmit::before{
+    content: attr(title);
+    width: calc(1.2rem * 3 * 0.58);
+    float: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: justify;
+    direction: rtl;
+    font-family:'AlibabaPuHuiTiRegular';
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #7A5651;
+    text-align:left;
+    transform:translate(-0.46rem, 0);
+}
+*/
+.pageNavView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    user-select: none;
+}
+.pageNavBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pageNavItem {
+    font-family:'AlibabaPuHuiTiRegular';
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #000000;
+    padding: 0.175rem 0.5rem;
+    margin: 0 0.175rem;
+}
+.pageNavItemCur {
+    border: 0.05rem solid #000;
+    border-radius: 0.5rem;
+}
+.pageNavArrowImg {
+    height: 1.75rem;
+    width: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.backgroundItemA {
+    position: absolute;
+    overflow: visible;
+    background: no-repeat center/100% url('/images/background-potato-flag.png');
+    background-repeat: no-repeat;
+    background-position: 0% 5%;
+    background-size: 16rem 17rem;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+.backgroundItemB {
+    position: absolute;
+    overflow: visible;
+    background: no-repeat center/100% url('/images/background-die.png');
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    background-size: 16rem 17rem;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+.backgroundItemC {
+    position: absolute;
+    overflow: visible;
+    background: no-repeat center/100% url('/images/background-atmosphere-a.png');
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: 53rem 28.66rem;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    mix-blend-mode: color-burn;
+
+
+}
+.backgroundItemD {
+    position: absolute;
+    overflow: visible;
+    background: no-repeat center/100% url('/images/background-atmosphere-b.png');
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-size: 16rem 16rem;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    mix-blend-mode: color-burn;
+
+}
+

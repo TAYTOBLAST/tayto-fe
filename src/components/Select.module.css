@@ -1,0 +1,111 @@
+.selectBox {
+    position: relative;
+    width: 100%;
+    user-select: none;
+
+}
+.selectMask {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 98;
+}
+.selectBut {
+    background-color: #FFEDCD;
+    border-radius: var(--rounded-btn, 0.5rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    border: 2px solid #7A5651;
+    overflow: hidden;
+    height: 3.15rem;
+
+}
+.selectBut:hover {
+    background-color: #E1D0BD;
+}
+.selectButText {
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: none;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #370903;
+}
+.selectTypeNameBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 10rem;
+}
+.selectArrowIcon {
+    margin: 0.5rem 0 0 0.125rem;
+    flex-shrink: 0;
+}
+.selectOptionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #7A5651;
+    border-radius: var(--rounded-btn, 0.5rem);
+    background-color: #FFEDCD;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    overflow: hidden;
+}
+.selectOptionItem {
+    font-family:'AlibabaPuHuiTiMedium';
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: none;
+    color: #370903;
+    margin-right: 0.125rem;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0rem 0rem;
+}
+.selectOptionItem:hover {
+    background-color: #E1D0BD;
+}
+.selectOptionLabel {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0rem 1rem;
+
+}
+.selectIcon {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+}
+.selectIconPlaceholder {
+    width: 2rem;
+    height: 2rem;
+}
