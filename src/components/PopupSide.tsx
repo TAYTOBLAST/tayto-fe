@@ -23,7 +23,7 @@ function PopupSide({ person }: any) {
     new Date().getMinutes();
 
   const openInExplorer = () => {
-    window.open(`https://goerli.etherscan.io/tx/${hash}`, "_blank");
+    window.open(`https://testnet.blastscan.io/tx/${hash}`, "_blank");
   };
 
   return (
